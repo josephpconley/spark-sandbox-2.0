@@ -1,0 +1,5 @@
+.idea
+counts.txt
+pair.parquet
+target
+*.log

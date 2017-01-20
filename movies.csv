@@ -1,0 +1,101 @@
+"product","count","movieId","title","genres","my_rating"
+296,325,296,"Pulp Fiction (1994)","Comedy|Crime|Drama|Thriller",5
+356,311,356,"Forrest Gump (1994)","Comedy|Drama|Romance|War",3
+318,308,318,"Shawshank Redemption, The (1994)","Crime|Drama",5
+480,294,480,"Jurassic Park (1993)","Action|Adventure|Sci-Fi|Thriller",4
+593,290,593,"Silence of the Lambs, The (1991)","Crime|Horror|Thriller",0
+260,273,260,"Star Wars: Episode IV - A New Hope (1977)","Action|Adventure|Sci-Fi",3
+2571,261,2571,"Matrix, The (1999)","Action|Sci-Fi|Thriller",5
+589,253,589,"Terminator 2: Judgment Day (1991)","Action|Sci-Fi",2
+110,248,110,"Braveheart (1995)","Action|Drama|War",3
+527,248,527,"Schindler's List (1993)","Drama|War",3
+457,244,457,"Fugitive, The (1993)","Thriller",4
+1,232,1,"Toy Story (1995)","Adventure|Animation|Children|Comedy|Fantasy",4
+50,228,50,"Usual Suspects, The (1995)","Crime|Mystery|Thriller",4
+1196,228,1196,"Star Wars: Episode V - The Empire Strikes Back (1980)","Action|Adventure|Sci-Fi",4
+1198,224,1198,"Raiders of the Lost Ark (Indiana Jones and the Raiders of the Lost Ark) (1981)","Action|Adventure",4
+1210,222,1210,"Star Wars: Episode VI - Return of the Jedi (1983)","Action|Adventure|Sci-Fi",3
+592,217,592,"Batman (1989)","Action|Crime|Thriller",4
+2858,216,2858,"American Beauty (1999)","Drama|Romance",3
+1270,213,1270,"Back to the Future (1985)","Adventure|Comedy|Sci-Fi",4
+858,210,858,"Godfather, The (1972)","Crime|Drama",5
+32,207,32,"Twelve Monkeys (a.k.a. 12 Monkeys) (1995)","Mystery|Sci-Fi|Thriller",0
+2959,207,2959,"Fight Club (1999)","Action|Crime|Drama|Thriller",0
+780,205,780,"Independence Day (a.k.a. ID4) (1996)","Action|Adventure|Sci-Fi|Thriller",3
+590,201,590,"Dances with Wolves (1990)","Adventure|Drama|Western",0
+608,201,608,"Fargo (1996)","Comedy|Crime|Drama|Thriller",0
+150,197,150,"Apollo 13 (1995)","Adventure|Drama|IMAX",3
+377,197,377,"Speed (1994)","Action|Romance|Thriller",3
+47,196,47,"Seven (a.k.a. Se7en) (1995)","Mystery|Thriller",4
+588,191,588,"Aladdin (1992)","Adventure|Animation|Children|Comedy|Musical",3
+2762,191,2762,"Sixth Sense, The (1999)","Drama|Horror|Mystery",4
+4993,189,4993,"Lord of the Rings: The Fellowship of the Ring, The (2001)","Adventure|Fantasy",5
+2028,187,2028,"Saving Private Ryan (1998)","Action|Drama|War",5
+380,184,380,"True Lies (1994)","Action|Adventure|Comedy|Romance|Thriller",2
+364,179,364,"Lion King, The (1994)","Adventure|Animation|Children|Drama|Musical|IMAX",2
+344,173,344,"Ace Ventura: Pet Detective (1994)","Comedy",3
+648,173,648,"Mission: Impossible (1996)","Action|Adventure|Mystery|Thriller",4
+1580,172,1580,"Men in Black (a.k.a. MIB) (1997)","Action|Comedy|Sci-Fi",3
+1197,171,1197,"Princess Bride, The (1987)","Action|Adventure|Comedy|Fantasy|Romance",4
+1291,167,1291,"Indiana Jones and the Last Crusade (1989)","Action|Adventure",5
+5952,167,5952,"Lord of the Rings: The Two Towers, The (2002)","Adventure|Fantasy",5
+500,166,500,"Mrs. Doubtfire (1993)","Comedy|Drama",3
+7153,166,7153,"Lord of the Rings: The Return of the King, The (2003)","Action|Adventure|Drama|Fantasy",5
+1036,165,1036,"Die Hard (1988)","Action|Crime|Thriller",3
+1240,164,1240,"Terminator, The (1984)","Action|Sci-Fi|Thriller",4
+3578,164,3578,"Gladiator (2000)","Action|Adventure|Drama",5
+733,160,733,"Rock, The (1996)","Action|Adventure|Thriller",4
+4306,158,4306,"Shrek (2001)","Adventure|Animation|Children|Comedy|Fantasy|Romance",4
+153,157,153,"Batman Forever (1995)","Action|Adventure|Comedy|Crime",3
+316,157,316,"Stargate (1994)","Action|Adventure|Sci-Fi",0
+1200,157,1200,"Aliens (1986)","Action|Adventure|Horror|Sci-Fi",0
+1265,157,1265,"Groundhog Day (1993)","Comedy|Fantasy|Romance",3
+541,156,541,"Blade Runner (1982)","Action|Sci-Fi|Thriller",3
+1097,156,1097,"E.T. the Extra-Terrestrial (1982)","Children|Drama|Sci-Fi",3
+1214,156,1214,"Alien (1979)","Horror|Sci-Fi",0
+4226,156,4226,"Memento (2000)","Mystery|Thriller",4
+1136,154,1136,"Monty Python and the Holy Grail (1975)","Adventure|Comedy|Fantasy",3
+1721,153,1721,"Titanic (1997)","Drama|Romance",2
+165,150,165,"Die Hard: With a Vengeance (1995)","Action|Crime|Thriller",4
+231,149,231,"Dumb & Dumber (Dumb and Dumber) (1994)","Adventure|Comedy",4
+597,148,597,"Pretty Woman (1990)","Comedy|Romance",0
+367,146,367,"Mask, The (1994)","Action|Comedy|Crime|Fantasy",3
+293,144,293,"Léon: The Professional (a.k.a. The Professional) (Léon) (1994)","Action|Crime|Drama|Thriller",0
+595,143,595,"Beauty and the Beast (1991)","Animation|Children|Fantasy|Musical|Romance|IMAX",1
+1193,143,1193,"One Flew Over the Cuckoo's Nest (1975)","Drama",3
+587,142,587,"Ghost (1990)","Comedy|Drama|Fantasy|Romance|Thriller",2
+736,141,736,"Twister (1996)","Action|Adventure|Romance|Thriller",3
+6539,141,6539,"Pirates of the Caribbean: The Curse of the Black Pearl (2003)","Action|Adventure|Comedy|Fantasy",4
+1221,140,1221,"Godfather: Part II, The (1974)","Crime|Drama",5
+1527,140,1527,"Fifth Element, The (1997)","Action|Adventure|Comedy|Sci-Fi",4
+1704,140,1704,"Good Will Hunting (1997)","Drama|Romance",5
+2716,139,2716,"Ghostbusters (a.k.a. Ghost Busters) (1984)","Action|Comedy|Sci-Fi",3
+1617,137,1617,"L.A. Confidential (1997)","Crime|Film-Noir|Mystery|Thriller",5
+1073,136,1073,"Willy Wonka & the Chocolate Factory (1971)","Children|Comedy|Fantasy|Musical",2
+2628,136,2628,"Star Wars: Episode I - The Phantom Menace (1999)","Action|Adventure|Sci-Fi",3
+10,135,10,"GoldenEye (1995)","Action|Adventure|Thriller",4
+1213,135,1213,"Goodfellas (1990)","Crime|Drama",4
+349,134,349,"Clear and Present Danger (1994)","Action|Crime|Drama|Thriller",5
+1206,134,1206,"Clockwork Orange, A (1971)","Crime|Drama|Sci-Fi|Thriller",0
+1089,131,1089,"Reservoir Dogs (1992)","Crime|Mystery|Thriller",3
+3793,130,3793,"X-Men (2000)","Action|Adventure|Sci-Fi",4
+34,129,34,"Babe (1995)","Children|Drama",0
+2918,128,2918,"Ferris Bueller's Day Off (1986)","Comedy",4
+539,127,539,"Sleepless in Seattle (1993)","Comedy|Drama|Romance",1
+58559,127,58559,"Dark Knight, The (2008)","Action|Crime|Drama|IMAX",5
+924,126,924,"2001: A Space Odyssey (1968)","Adventure|Drama|Sci-Fi",4
+357,125,357,"Four Weddings and a Funeral (1994)","Comedy|Romance",0
+750,125,750,"Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb (1964)","Comedy|War",4
+912,125,912,"Casablanca (1942)","Drama|Romance",0
+586,124,586,"Home Alone (1990)","Children|Comedy",3
+1393,124,1393,"Jerry Maguire (1996)","Drama|Romance",2
+2997,124,2997,"Being John Malkovich (1999)","Comedy|Drama|Fantasy",0
+208,123,208,"Waterworld (1995)","Action|Adventure|Sci-Fi",0
+253,122,253,"Interview with the Vampire: The Vampire Chronicles (1994)","Drama|Horror",0
+1682,122,1682,"Truman Show, The (1998)","Comedy|Drama|Sci-Fi",4
+4963,119,4963,"Ocean's Eleven (2001)","Crime|Thriller",4
+4973,119,4973,"Amelie (Fabuleux destin d'Amélie Poulain, Le) (2001)","Comedy|Romance",0
+111,118,111,"Taxi Driver (1976)","Crime|Drama|Thriller",0
+1968,118,1968,"Breakfast Club, The (1985)","Comedy|Drama",2
+2683,117,2683,"Austin Powers: The Spy Who Shagged Me (1999)","Action|Adventure|Comedy",4
+6377,117,6377,"Finding Nemo (2003)","Adventure|Animation|Children|Comedy",2
