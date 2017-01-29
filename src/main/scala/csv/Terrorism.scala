@@ -11,7 +11,7 @@ object Terrorism extends App {
   val sqlContext = spark.sqlContext
   import sqlContext.implicits._
 
-  val df = spark.read.option("header", "true").csv("/home/jconley/data/terrorism.csv")
+  val df = spark.read.option("header", "true").option("inferSchema", "true").csv("/home/jconley/data/terrorism.csv")
   df.printSchema()
 
   df.where($"country_txt".isNull).where($"iyear".isNull).show()
