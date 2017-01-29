@@ -4,6 +4,12 @@ import util.SparkApp
 
 case class Sales(id: Int, account: String, year: String, commission: Int, sales_reps: Seq[String])
 
+/**
+  * From Data Science in Scala on Big Data University
+  * Module 3 - Explode, UDFs, and Pivot
+  *
+  * https://courses.bigdatauniversity.com/courses/course-v1:BigDataUniversity+SC0105EN+2016/courseware/366f34a7b4944bd68b946ae3da88270c/54938b466e384d48b87b4e4da793c41e/
+  */
 object ExplodeUdfPivot extends SparkApp {
 
   val name = "ExplodedUdfPivot"
