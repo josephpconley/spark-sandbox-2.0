@@ -12,8 +12,6 @@ case class Sales(id: Int, account: String, year: String, commission: Int, sales_
   */
 object ExplodeUdfPivot extends SparkApp {
 
-  val name = "ExplodedUdfPivot"
-
   import sqlContext.implicits._
   import org.apache.spark.sql.functions._
 

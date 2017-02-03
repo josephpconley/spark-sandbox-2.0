@@ -1,14 +1,11 @@
 package csv
 
-import org.apache.spark.sql.SparkSession
+import util.SparkApp
 
 /*
 Variables transformed by PCA to preserver anonymity
  */
-object CreditCardFraud extends App {
-
-  val spark = SparkSession.builder().appName("CreditCardFraud").master("local[*]").getOrCreate()
-  val sqlContext = spark.sqlContext
+object CreditCardFraud extends SparkApp {
 
   val df = spark.read.option("header", "true").csv("/home/jconley/data/creditcard.csv")
   df.printSchema()
