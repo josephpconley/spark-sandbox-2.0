@@ -14,6 +14,19 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-streaming" % sparkVersion,
   "org.apache.spark" %% "spark-mllib" % sparkVersion,
 //  "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion,
+  "com.datastax.spark" %% "spark-cassandra-connector" % "2.0.0-M3", // excludeAll(excludes:_*),
   "mysql" % "mysql-connector-java" % "5.1.29",
-  "org.postgresql" % "postgresql" % "9.4-1201-jdbc4"
+  "org.postgresql" % "postgresql" % "9.4-1201-jdbc4",
+  "oracle" % "ojdbc6" % "11.2.0.3.0",
+  "com.zaxxer" % "HikariCP" % "2.5.1",
+  "com.typesafe.play" %% "anorm" % "2.4.0",
+  "com.typesafe" % "config" % "1.3.1"
 )
+
+fork in runMain := true
+
+javaOptions in runMain ++= Seq(
+  "-Dlog4j.debug=true",
+  "-Dlog4j.configuration=log4j.properties")
+
+outputStrategy := Some(StdoutOutput)
