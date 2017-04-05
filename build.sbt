@@ -31,10 +31,10 @@ javaOptions in runMain ++= Seq(
 outputStrategy := Some(StdoutOutput)
 
 import ReleaseTransformations._
-import sbtrelease.Version.Bump.Bugfix
+import sbtrelease.Version.Bump
 
 releaseTagName := s"${if (releaseUseGlobalVersion.value) (version in ThisBuild).value else version.value}"
-releaseVersionBump := Bugfix
+//releaseVersionBump := Bump
 
 releaseProcess := Seq[ReleaseStep](
   checkSnapshotDependencies,              // : ReleaseStep
