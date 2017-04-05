@@ -1,7 +1,5 @@
 name := "spark-sandbox"
 
-version := "1.0"
-
 scalaVersion := "2.11.8"
 
 resolvers += "Typesafe Repo" at "http://repo.typesafe.com/typesafe/releases/"
@@ -33,6 +31,8 @@ javaOptions in runMain ++= Seq(
 outputStrategy := Some(StdoutOutput)
 
 import ReleaseTransformations._
+
+releaseTagName := s"${if (releaseUseGlobalVersion.value) (version in ThisBuild).value else version.value}"
 
 releaseProcess := Seq[ReleaseStep](
   checkSnapshotDependencies,              // : ReleaseStep
