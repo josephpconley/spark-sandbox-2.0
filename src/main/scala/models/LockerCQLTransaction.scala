@@ -26,9 +26,9 @@ object LockerCQLTransaction extends RandomData {
   val statuses = Seq("POSTED","PENDING","FAILED","RETRY","RECONCILED")
   val originationPoints = Seq("VOD","Linear","Unknown")
 
-  def generate(n: Int): Seq[LockerCQLTransaction] = {
+  def generate(n: Int, numMonths: Int = 12): Seq[LockerCQLTransaction] = {
     val maxDate = DateTime.now()
-    val minDate = maxDate.minusMonths(6)
+    val minDate = maxDate.minusMonths(numMonths)
 
     (0 to n).map { _ =>
       LockerCQLTransaction(

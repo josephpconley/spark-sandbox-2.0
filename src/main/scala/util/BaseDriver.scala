@@ -13,6 +13,8 @@ trait BaseDriver extends Logging {
     .appName(name)
     .master("local[*]")
     .config("spark.executor.memory", "4g")
+    .config("spark.eventLog.enabled", "true")
+    .config("spark.eventLog.dir", "/logs/spark-2.1-events")
     .getOrCreate()
   
   lazy val sc = spark.sparkContext

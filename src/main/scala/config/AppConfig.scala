@@ -28,11 +28,19 @@ class AppConfig(config: Config) {
 //  val CassandraWriteConsistency: String = config.getString("spark.cassandra.output.consistency.level")
 //  val Persist: Boolean = config.getBoolean("persist")
 
-  val jdbcUrl: String = config.getString("jdbc.url")
-  val jdbcUsername: String = config.getString("jdbc.username")
-  val jdbcPassword: String = config.getString("jdbc.password")
+  val oracleUrl: String = config.getString("oracle.url")
+  val oracleUsername: String = config.getString("oracle.username")
+  val oraclePassword: String = config.getString("oracle.password")
 
-  val jdbcProperties = new Properties()
-  jdbcProperties.setProperty("user", jdbcUsername)
-  jdbcProperties.setProperty("password", jdbcPassword)
+  val oracleJDBCProperties = new Properties()
+  oracleJDBCProperties.setProperty("user", oracleUsername)
+  oracleJDBCProperties.setProperty("password", oraclePassword)
+
+  val postgresUrl: String = config.getString("postgres.url")
+  val postgresUsername: String = config.getString("postgres.username")
+  val postgresPassword: String = config.getString("postgres.password")
+
+  val postgresJDBCProperties = new Properties()
+  postgresJDBCProperties.setProperty("user", postgresUsername)
+  postgresJDBCProperties.setProperty("password", postgresPassword)
 }

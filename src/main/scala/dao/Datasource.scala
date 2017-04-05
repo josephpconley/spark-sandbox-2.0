@@ -16,9 +16,9 @@ object Datasource {
   private val appConfig = new AppConfig()
 
   private val ds = new HikariDataSource()
-  ds.setJdbcUrl(appConfig.jdbcUrl)
-  ds.setUsername(appConfig.jdbcUsername)
-  ds.setPassword(appConfig.jdbcPassword)
+  ds.setJdbcUrl(appConfig.oracleUrl)
+  ds.setUsername(appConfig.oracleUsername)
+  ds.setPassword(appConfig.oraclePassword)
 
   def withConnection[A](block: Connection => A): A = {
     val connection: Connection = ds.getConnection

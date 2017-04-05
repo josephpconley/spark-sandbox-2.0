@@ -43,9 +43,9 @@ object LockerTransaction extends RandomData {
 //  ))
 
 
-  def generate(n: Int): Seq[LockerTransaction] = {
+  def generate(n: Int, numMonths: Int = 12): Seq[LockerTransaction] = {
     val maxDate = DateTime.now()
-    val minDate = maxDate.minusMonths(6)
+    val minDate = maxDate.minusMonths(numMonths)
 
     (0 until n).map { _ =>
       LockerTransaction(
