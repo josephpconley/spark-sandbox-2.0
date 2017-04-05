@@ -34,7 +34,7 @@ import ReleaseTransformations._
 import sbtrelease.Version.Bump
 
 releaseTagName := s"${if (releaseUseGlobalVersion.value) (version in ThisBuild).value else version.value}"
-//releaseVersionBump := Bump
+releaseVersionBump := Bump.Minor
 
 releaseProcess := Seq[ReleaseStep](
   checkSnapshotDependencies,              // : ReleaseStep
