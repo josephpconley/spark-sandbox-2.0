@@ -13,6 +13,7 @@ libraryDependencies ++= Seq(
   "org.apache.spark" %% "spark-mllib" % sparkVersion,
 //  "org.apache.spark" %% "spark-streaming-twitter" % sparkVersion,
   "org.apache.kudu" %% "kudu-spark2" % "1.2.0",
+  "com.databricks" %% "spark-avro" % "3.2.0",
   "com.datastax.spark" %% "spark-cassandra-connector" % "2.0.0-M3", // excludeAll(excludes:_*),
   "mysql" % "mysql-connector-java" % "5.1.29",
   "org.postgresql" % "postgresql" % "9.4-1201-jdbc4",

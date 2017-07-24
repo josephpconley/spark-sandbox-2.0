@@ -9,7 +9,7 @@ import util.{BaseDriver, Writers}
 object TestDataGenerator extends BaseDriver with Writers {
 
   override def run = {
-    import sql.implicits._
+    import sqlContext.implicits._
 
     //TODO figure out why this takes too longs/fails
 //    val numRecords = Math.pow(10, 6).toInt
@@ -22,7 +22,7 @@ object TestDataGenerator extends BaseDriver with Writers {
       * 1 to 89 - 4M records
       */
 
-    val numRecords = sc.parallelize(1 to 89).cache()
+    val numRecords = sparkContext.parallelize(1 to 89).cache()
     val transactions = numRecords.flatMap(i => LockerTransaction.generate(i * 1000, 24))
     val df = transactions.toDS().toDF()
 

@@ -13,7 +13,7 @@ case class Sales(id: Int, account: String, year: String, commission: Int, sales_
 object ExplodeUdfPivot extends BaseDriver {
 
   override def run(): Unit = {
-    import sql.implicits._
+    import sqlContext.implicits._
     import org.apache.spark.sql.functions._
 
     val sales = Seq(

@@ -3,9 +3,6 @@ package csv
 import org.apache.spark.sql.Column
 import util.BaseDriver
 
-/*
-Variables transformed by PCA to preserver anonymity
- */
 object CreditCardFraud extends BaseDriver {
 
   override def run(): Unit = {

@@ -6,7 +6,7 @@ import util.BaseDriver
 object Union extends BaseDriver {
 
   override def run(): Unit = {
-    val reader = sql.read.format("jdbc").options(Map(
+    val reader = sqlContext.read.format("jdbc").options(Map(
     "driver" -> "org.postgresql.Driver",
     "url" -> "jdbc:postgresql://localhost/dc?user=dc&password=dc",
     "dbtable" -> "\"user\""))

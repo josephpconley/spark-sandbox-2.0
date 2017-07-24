@@ -24,7 +24,7 @@ object ShufflePartitionTest extends BaseDriver with Writers with RandomData with
 
   override def run(): Unit = {
     val customerIds = Seq("001", "002", "003", "004", "005")
-    val purchases = sc.parallelize( (0 to 100000).map(_ => Purchase(generateFromSeq(customerIds), generateDouble(5.0, 10.0))))
+    val purchases = sparkContext.parallelize( (0 to 100000).map(_ => Purchase(generateFromSeq(customerIds), generateDouble(5.0, 10.0))))
     purchases.cache()
     
     

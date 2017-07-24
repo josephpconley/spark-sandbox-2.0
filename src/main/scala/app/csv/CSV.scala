@@ -1,24 +1,18 @@
 package app.csv
 
+import org.apache.spark.sql.expressions.Window
 import util.BaseDriver
+import org.apache.spark.sql.functions._
 
-/*
-Variables transformed by PCA to preserver anonymity
- */
 object CSV extends BaseDriver {
 
   override def run(): Unit = {
-    import sql.implicits._
+    import sqlContext.implicits._
 
-    val df = spark.read.option("header", "true").option("inferSchema", "true").csv("/home/jconley/Desktop/04122017.csv")
-    val dupes = df
-      .where("client == 'XRE:X2'")
-      .groupBy($"account", $"programmer_id")
-      .count()
-      .where("count > 1")
-      .orderBy($"count".desc)
-
-    dupes.show()
-    println(dupes.count())
+    val df = spark.read.option("header", "true").option("inferSchema", "true").csv("/home/jconley/Desktop/window.csv")
+    df
+      .withColumn("rank", rank.over(Window.partitionBy($"transaction_id").orderBy($"transaction_time".desc, $"error_message")))
+      .where("rank > 1")
+      .show()
   }
 }

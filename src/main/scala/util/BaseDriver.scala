@@ -17,10 +17,9 @@ trait BaseDriver extends Logging {
     .config("spark.eventLog.dir", "/logs/spark-2.1-events")
     .getOrCreate()
   
-  lazy val sc = spark.sparkContext
-  lazy val sql = spark.sqlContext
+  lazy val sparkContext = spark.sparkContext
+  lazy val sqlContext = spark.sqlContext
 
-  //TODO why doens't logger work?
   def main(args: Array[String]): Unit = {
     logger.info("Spark Config")
     spark.conf.getAll.foreach(logger.info)

@@ -21,14 +21,14 @@ object KuduTestDataGenerator extends BaseDriver with Writers {
   }
 
   def read = {
-    val df = sql.read.options(Map("kudu.master" -> "quickstart.cloudera","kudu.table" -> "sfmta")).kudu
+    val df = sqlContext.read.options(Map("kudu.master" -> "quickstart.cloudera","kudu.table" -> "sfmta")).kudu
     df.printSchema()
   }
 
   def write = {
-    import sql.implicits._
+    import sqlContext.implicits._
 
-    val numRecords = sc.parallelize(0 to 10).cache()
+    val numRecords = sparkContext.parallelize(0 to 10).cache()
     val transactions = numRecords.flatMap(i => LockerTransaction.generate(i * 100))
     val df = transactions.toDS().toDF()
 

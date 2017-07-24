@@ -8,7 +8,7 @@ Variables transformed by PCA to preserver anonymity
 object Terrorism extends BaseDriver {
 
   override def run(): Unit = {
-    import sql.implicits._
+    import sqlContext.implicits._
 
     val df = spark.read.option("header", "true").option("inferSchema", "true").csv("/home/jconley/data/terrorism.csv")
     df.printSchema()
